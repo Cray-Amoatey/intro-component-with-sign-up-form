@@ -13,4 +13,5 @@ body{
     height: 1440px;
     /* width: 800px; */
     background-color:hsl(0, 100%, 74%)  ;
+    background-image: url(images/bg-intro-desktop.png);
 }
