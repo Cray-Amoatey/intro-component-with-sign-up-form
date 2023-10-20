@@ -5,6 +5,7 @@
 }
 
 body {
+  overflow-x: hidden;
   font-family: Poppins;
   background-image: url(images/bg-intro-desktop.png);
   background-color: hsl(0, 100%, 74%);
@@ -14,14 +15,14 @@ body {
   display: flex;
   margin: 10rem;
   gap: 5rem;
-      margin: 25% 10%
+  margin: 25% 10%;
 }
 
 .article-container {
   margin: auto;
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 2rem;
   color: white;
 }
 
@@ -38,13 +39,10 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-    /*height: 40rem;*/
   width: 80rem;
   background-color: white;
-    border-radius: 0.5rem;
-      padding: 2rem;
-
-
+  border-radius: 0.5rem;
+  padding: 2rem;
 }
 
 .form-heading {
@@ -60,54 +58,82 @@ body {
 }
 
 .form-field {
-  /*height: 30rem;
-  width: 30rem;
-  background-color: white;*/
-  /*border-radius: 0.5rem;*/
-  /*padding: 2rem;*/
   display: flex;
   flex-direction: column;
-  gap:2rem; 
-
-  
+  gap: 2rem;
 }
 
-.form-field input{
-      padding: 1rem;
-      border-radius: 0.3rem;  
-      color:  hsl(249, 10%, 26%) ;
-      font-weight: 600; 
-      font-size: 16px;
-      border: 1px solid  hsl(246, 25%, 77%);
-      
-    }
- .form-field input:active, .form-field input:focus {
-      border-color: hsl(248, 32%, 49%);
-      outline: none;
-    }
-
-.claim-button{
-    padding: 1rem;
-    border-radius: 0.3rem;
-    color: white;
-    background-color:hsl(154, 59%, 51%);
-    font-size: 16px ;
-    font-weight: 600;
-    text-transform: capitalize;
-    border: none ;
+.form-field input {
+  color: hsl(249, 10%, 26%);
+  font-weight: 600;
+  font-size: 16px;
+  width: 100%;
+  border: none;
+  outline: none;
 }
-.claim-button:hover{
-    cursor: pointer;
+
+.input-control {
+  border-radius: 0.3rem;
+  border: 1px solid hsl(246, 25%, 77%);
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  justify-content: space-between;
+  position: relative;
 }
 
 
-.form-footer{
-    color: hsl(246, 25%, 77%);
-    font-size: 10px;
-    font-weight: bold ;
-    text-align: center;
-
+.input-success{
+    border: 1px solid hsl(154, 59%, 51%);
 }
 
 
+.input-error{
+      border: 1px solid hsl(0, 100%, 74%);
+}
 
+
+.input-control:focus-within {
+  border-color: hsl(248, 32%, 49%);
+}
+
+
+.error-message {
+  margin-top: 0.4rem;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  color: hsl(0, 100%, 74%);
+  font-size: 16px;
+  font-weight: 600;
+  display: none;
+}
+
+.error-image{
+  display: none;
+}
+
+
+.claim-button {
+  padding: 1rem;
+  border-radius: 0.3rem;
+  color: white;
+  background-color: hsl(154, 59%, 51%);
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  border: none;
+  box-shadow: 0px 5px hsl(500, 30%, 50%);
+}
+.claim-button:hover {
+  cursor: pointer;
+}
+
+
+.form-footer {
+  color: hsl(246, 25%, 77%);
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+}
