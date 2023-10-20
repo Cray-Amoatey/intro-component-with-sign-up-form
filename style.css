@@ -38,6 +38,13 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+    /*height: 40rem;*/
+  width: 80rem;
+  background-color: white;
+    border-radius: 0.5rem;
+      padding: 2rem;
+
+
 }
 
 .form-heading {
@@ -53,11 +60,11 @@ body {
 }
 
 .form-field {
-  height: 30rem;
+  /*height: 30rem;
   width: 30rem;
-  background-color: white;
-  border-radius: 0.5rem;
-  padding: 2rem;
+  background-color: white;*/
+  /*border-radius: 0.5rem;*/
+  /*padding: 2rem;*/
   display: flex;
   flex-direction: column;
   gap:2rem; 
@@ -70,7 +77,10 @@ body {
       border-radius: 0.3rem;  
       color:  hsl(249, 10%, 26%) ;
       font-weight: 600; 
-      font-size: 16px;   
+      font-size: 16px; 
+      /*outline-color: red;*/
+      outline-style: yellow;
+         border: 1px solid hsl(248, 32%, 49%);
 }
 
 .claim-button{
@@ -81,9 +91,16 @@ body {
     font-size: 16px ;
     font-weight: 600;
     text-transform: capitalize;
+    border: none ;
+}
+
+.form-footer{
+    color: hsl(246, 25%, 77%);
+    font-size: 10px;
+    font-weight: bold ;
+    text-align: center;
+
 }
 
 
-input focus{
-    color: red;
-}
+
