@@ -13,9 +13,9 @@ body {
 
 .wrapper-container {
   display: flex;
-  margin: 10rem;
+  margin: 3rem;
   gap: 5rem;
-  margin: 25% 10%;
+  margin: 3% 10%;
 }
 
 .article-container {
@@ -76,6 +76,7 @@ body {
   border-radius: 0.3rem;
   border: 1px solid hsl(246, 25%, 77%);
   padding: 0.8rem;
+  margin-bottom: 1rem;
   display: flex;
   align-items: center;
   text-align: right;
@@ -100,7 +101,7 @@ body {
 
 
 .error-message {
-  margin-top: 0.4rem;
+  margin-top: 0.5rem;
   position: absolute;
   top: 100%;
   right: 0;
@@ -108,9 +109,11 @@ body {
   font-size: 16px;
   font-weight: 600;
   display: none;
+
 }
 
 .error-image{
+  margin-right: 1rem;
   display: none;
 }
 
@@ -125,6 +128,7 @@ body {
   text-transform: capitalize;
   border: none;
   box-shadow: 0px 5px hsl(500, 30%, 50%);
+  margin-bottom: -1rem;
 }
 .claim-button:hover {
   cursor: pointer;
