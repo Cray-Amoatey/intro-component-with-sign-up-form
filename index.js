@@ -1,34 +1,33 @@
-const inputControl = document.querySelector(".input-control");
-const errorImage = document.querySelector(".error-image");
-const errorMessage = document.querySelector(".error-message");
-
-const setError = () => {
-  errorImage.style.display = "block";
-  errorMessage.style.display = "block";
-  inputControl.classList.add("input-error");
-};
-
-const setSuccess = () => {
-  errorImage.style.display = "none";
-  errorMessage.style.display = "none";
-  inputControl.classList.remove("input-error");
-  inputControl.classList.add("input-success");
-};
-
 const form = document.getElementById("form");
+
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  validateFirstName();
+
+  validateFisrtName();
 });
+
+ const errorImage = document.querySelector(".error-image")
+ 
+const setError = (inputElement) => {
+  inputElement.parentElement.classList.add("input-error");
+  errorImage.style.display = "block";
+};
+
+const setSucces = (inputElement) => {
+  inputElement.parentElement.classList.remove("input-error");
+    inputElement.parentElement.classList.add("input-success");
+    errorImage.style.display = "none"
+};
 
 const firstName = document.getElementById("firstname");
 
-const validateFirstName = () => {
+const validateFisrtName = () => {
   const firstnameValue = firstName.value.trim();
+  const firstnameError = document.querySelector(".first-error");
 
-  if (firstnameValue === "" && firstnameValue.length < 2) {
-    setError();
+  if (firstnameValue === "" || firstnameValue.length < 2) {
+    setError(firstName, firstnameError);
   } else {
-    setSuccess();
+    setSucces(firstName);
   }
 };
