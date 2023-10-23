@@ -47,37 +47,43 @@
           </p>
         </div>
         <form action="" id="form" class="form-field ">
-          <div class="input-control   ">
-            <input type="text" id="firstname" name="firstname" placeholder="First Name">
-            <span  id="errorImage" class="error-image">
-              <img src="images/icon-error.svg" alt="errorIcon">
-            </span>
-            <div class="error-message"> <i>FirstName cannot be empty</i></div>
-          </div>
+          
+         <div class="input-control">
+          <input type="text" id="firstname" name="firstname" placeholder="First Name">
+          <span class="error-image">
+            <img src="images/icon-error.svg" alt="errorIcon">
+          </span>
+          <div class="error-message"><i class="firstname-error">First Name cannot be empty</i></div>
+         </div>
+
           <div class="input-control ">
             <input type="text" id="lastname" name="lastname" placeholder="Last Name">
             <span id="errorImage" class="error-image">
               <img src="images/icon-error.svg" alt="errorIcon">
             </span>
-            <div class="error-message"><i>LastName cannot be empty</i></div>
+            <div class="error-message"><i class="lastname-error">LastName cannot be empty</i></div>
           </div>
+
           <div class="input-control ">
             <input type="email" id="email" name="email" placeholder=" Email Address"> 
             <span id="errorImage" class="error-image">
               <img src="images/icon-error.svg" alt="errorIcon"> 
             </span>
-            <div class="error-message"><i>Looks like this is not an email</i></div>
+            <div class="error-message"><i class="email-error">Looks like this is not an email</i></div>
           </div>
+
           <div class="input-control">
             <input type="password" id="password" name="password" placeholder="Password">
             <span id="errorImage" class="error-image">
               <img src="images/icon-error.svg" alt="errorIcon">
             </span>
-            <div class="error-message"><i>Password cannot be empty</i></div>
+            <div class="error-message"><i class="password-error">Password cannot be empty</i></div>
           </div>
+
           <button type="submit"   id="submit" class="claim-button">
             Claim your free trial
           </button>
+
         </form>
 
         <div class="form-footer-container">
