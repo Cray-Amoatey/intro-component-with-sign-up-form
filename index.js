@@ -5,7 +5,6 @@ form.addEventListener("submit", (e) => {
 
   validateFisrtName();
   validateLastName();
-  validateEmailInput()
 });
 
 const errorImage = document.querySelector(".error-image");
@@ -36,6 +35,22 @@ const validateFisrtName = () => {
     setError(firstName, firstnameErrorImage, firstnameErrorMessage);
   } else {
     setSucces(firstName, firstnameErrorImage, firstnameErrorMessage);
+  }
+};
+
+
+
+const lastName = document.getElementById("lastname");
+
+const validateLastName = () => {
+  const lastnameValue = lastName.value.trim();
+  const lastnameErrorImage = document.getElementById("lastNameErrorImage");
+  const lastnameErrorMessage = document.querySelector(".lastname-error");
+
+  if (lastnameValue === "" || lastnameValue.length < 2) {
+    setError(lastName, lastnameErrorImage, lastnameErrorMessage);
+  } else {
+    setSucces(lastName, lastnameErrorImage, lastnameErrorMessage);
   }
 };
 
