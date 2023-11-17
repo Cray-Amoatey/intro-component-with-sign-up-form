@@ -5,6 +5,7 @@ form.addEventListener("submit", (e) => {
 
   validateFisrtName();
   validateLastName();
+  validateEmail();
 });
 
 const errorImage = document.querySelector(".error-image");
@@ -23,6 +24,10 @@ const setSucces = (inputElement, errorImage, errorMessage) => {
   errorMessage.style.display = "none";
 };
 
+const isValidEmail = (email) => {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+};
 
 const firstName = document.getElementById("firstname");
 
@@ -38,8 +43,6 @@ const validateFisrtName = () => {
   }
 };
 
-
-
 const lastName = document.getElementById("lastname");
 
 const validateLastName = () => {
@@ -54,4 +57,15 @@ const validateLastName = () => {
   }
 };
 
+const email = document.getElementById("email")
 
+const validateEmail = () => {
+  const emailErrorImage = document.getElementById("emailErrorImage");
+  const emailErrorMessage = document.querySelector(".email-error");
+
+  if (!isValidEmail(email.value)) {
+    setError(email, emailErrorImage, emailErrorMessage);
+  } else {
+    setSucces(email, emailErrorImage, emailErrorMessage);
+  }
+};
