@@ -6,6 +6,7 @@ form.addEventListener("submit", (e) => {
   validateFisrtName();
   validateLastName();
   validateEmail();
+  validatePassword();
 });
 
 const errorImage = document.querySelector(".error-image");
@@ -57,7 +58,7 @@ const validateLastName = () => {
   }
 };
 
-const email = document.getElementById("email")
+const email = document.getElementById("email");
 
 const validateEmail = () => {
   const emailErrorImage = document.getElementById("emailErrorImage");
@@ -67,5 +68,19 @@ const validateEmail = () => {
     setError(email, emailErrorImage, emailErrorMessage);
   } else {
     setSucces(email, emailErrorImage, emailErrorMessage);
+  }
+};
+
+const password = document.getElementById("password");
+
+const validatePassword = () => {
+  const passwordValue = password.value.trim();
+  const passwordErrorImage = document.getElementById("passwordErrorImage");
+  const passwordErrorMessage = document.querySelector(".password-error");
+
+  if (passwordValue === "" || passwordValue.length < 8) {
+    setError(password, passwordErrorImage, passwordErrorMessage);
+  } else {
+    setSucces(password, passwordErrorImage, passwordErrorMessage);
   }
 };
