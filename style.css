@@ -94,6 +94,7 @@ body {
 
 .input-control:focus-within {
   border-color: hsl(248, 32%, 49%);
+  border-top: none;
 }
 
 .error-message {
