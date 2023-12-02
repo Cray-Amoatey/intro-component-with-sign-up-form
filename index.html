@@ -12,8 +12,10 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800&family=Outfit:wght@400;500;700&family=Overpass:wght@400;700&family=Poppins:wght@400;500;600;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
@@ -34,22 +36,21 @@
 
   <body>
     <main class="main-container">
+      <article class="article-container">
+        <h1 class="article-heading">Learn to code by watching others</h1>
+        <p class="article-text">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </article>
       <div class="wrapper-container">
-        <article class="article-container">
-          <h1 class="article-heading">Learn to code by watching others</h1>
-          <p class="article-text">
-            See how experienced developers solve problems in real-time. Watching
-            scripted tutorials is great, but understanding how developers think
-            is invaluable.
+        <div class="form-heading">
+          <p class="form-heading-text">
+            <strong>Try it free 7 days</strong> then $20/mo. thereafter
           </p>
-        </article>
+        </div>
         <div class="form-container">
-          <div class="form-heading">
-            <p class="form-heading-text">
-              <strong>Try it free 7 days</strong> then $20/mo. thereafter
-            </p>
-          </div>
-
           <form id="form" class="form-field">
             <div class="input-control">
               <input
@@ -107,7 +108,9 @@
                 <img src="images/icon-error.svg" alt="errorIcon" />
               </span>
               <div class="error-message password-error">
-                <i class="password-error">Password must be at least 8 characters</i>
+                <i class="password-error"
+                  >Password must be at least 8 characters</i
+                >
               </div>
             </div>
 
