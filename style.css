@@ -1,17 +1,146 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family:Poppins;
-    font-size: 16px
+body {
+  overflow: hidden;
+  font-family: Poppins;
+  background-image: url(images/bg-intro-desktop.png);
+  background-color: hsl(0, 100%, 74%);
 }
 
-.component-wrapper{
-    height: 1440px;
-    /* width: 800px; */
-    background-color:hsl(0, 100%, 74%)  ;
-    background-image: url(images/bg-intro-desktop.png);
+.main-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 5%;
 }
+
+.wrapper-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.article-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: white;
+  justify-content: center;
+}
+
+.article-heading {
+  font-weight: bold;
+  font-size: 30px;
+  width: 25rem;
+  line-height: 35px;
+}
+
+.article-text {
+  font-weight: 400;
+  width: 33rem;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 30rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.form-heading {
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 0.5rem;
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.form-heading-text {
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-field input {
+  color: hsl(249, 10%, 26%);
+  font-weight: 600;
+  font-size: 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.input-control {
+  border-radius: 0.3rem;
+  border: 1px solid hsl(246, 25%, 77%);
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  justify-content: space-between;
+  position: relative;
+}
+
+.input-success {
+  border: 1px solid hsl(154, 59%, 51%);
+}
+
+.input-error {
+  border: 1px solid hsl(0, 100%, 74%);
+}
+
+.input-control:focus-within {
+  border-color: hsl(248, 32%, 49%);
+}
+
+.error-message {
+  margin-top: 0.5rem;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  color: hsl(0, 100%, 74%);
+  font-size: 10px;
+  font-weight: 600;
+  display: none;
+}
+
+.error-image {
+  margin-right: 1rem;
+  display: none;
+}
+
+.claim-button {
+  padding: 1rem;
+  border-radius: 0.3rem;
+  color: white;
+  background-color: hsl(154, 59%, 51%);
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  border: none;
+  box-shadow: 0px 5px hsl(500, 30%, 50%);
+  margin-bottom: -1rem;
+}
+.claim-button:hover {
+  cursor: pointer;
+}
+
+.form-footer {
+  color: hsl(246, 25%, 77%);
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+ 
